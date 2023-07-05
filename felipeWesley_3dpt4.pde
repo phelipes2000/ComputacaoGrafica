@@ -62,6 +62,13 @@ void draw(){
   lights();
   //pointLight(255, 255, 255, mouseX, mouseY, 700);
   
+ /////////////////////////////TEXTO///////////////////////
+ fill(0);
+ textSize(20);
+  //text("Use as teclas WASD(para x e y)\n e ZX(para o z)\n para mover a camera", 40, 120);
+  text("Mover camera:\n  'W': Cima(-x)\n  'S': Baixo(+x)\n  'A': Esquerda(-y)\n  'D': Esquerda(+y)\n  'Z': Aumenta Profundidade(-z)\n  'X': Diminui Profundidade(+z) ", 40, 120); 
+ /////////////////////////////////////////////////////////
+  
 /////////////CAMERA//////////////////////////////////////
   ortho(-width/2, width/2, -height/2, height/2);
   if(keyPressed == true){
